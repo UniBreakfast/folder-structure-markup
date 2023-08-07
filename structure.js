@@ -43,7 +43,7 @@ and returns a string representing the structure like this:
   const tree1 = {
     name: 'file',
   }
-  const struct1 = structure(tree1)
+  const struct1 = stringifyDirStructure(tree1)
   console.log(struct1, '\n')
   // └─📄file
 }
@@ -53,7 +53,7 @@ and returns a string representing the structure like this:
     name: 'folder',
     children: [],
   }
-  const struct2 = structure(tree2)
+  const struct2 = stringifyDirStructure(tree2)
   console.log(struct2, '\n')
   // └─📁folder
 }
@@ -65,7 +65,7 @@ and returns a string representing the structure like this:
       { name: 'file' },
     ],
   }
-  const struct3 = structure(tree3)
+  const struct3 = stringifyDirStructure(tree3)
   console.log(struct3, '\n')
   // └─📁folder
   //   └─📄file
@@ -84,7 +84,7 @@ and returns a string representing the structure like this:
       },
     ],
   }
-  const struct4 = structure(tree4)
+  const struct4 = stringifyDirStructure(tree4)
   console.log(struct4, '\n')
   // └─📁folder
   //   └─📁subfolder1
@@ -108,7 +108,7 @@ and returns a string representing the structure like this:
       },
     ],
   }
-  const struct5 = structure(tree5)
+  const struct5 = stringifyDirStructure(tree5)
   console.log(struct5, '\n')
   // └─📁folder
   //   ├─📁subfolder1
@@ -140,7 +140,7 @@ and returns a string representing the structure like this:
     ],
   }
 
-  const struct6 = structure(tree6)
+  const struct6 = stringifyDirStructure(tree6)
   console.log(struct6, '\n')
   // ├─📁folder
   // │ └─📁subfolder1
@@ -150,7 +150,7 @@ and returns a string representing the structure like this:
   // └─📄file2
 }
 
-function structure(tree, last = true, depth = [0]) {
+function stringifyDirStructure(tree, last = true, depth = [0]) {
   const icon = tree.children ? '📁' : '📄'
   const line = last ? '└' : '├'
 
@@ -160,7 +160,7 @@ function structure(tree, last = true, depth = [0]) {
     tree.children.forEach((child, i, arr) => {
       const last = i === arr.length - 1
       const indent = depth.map(line => line ? '│  ' : '   ').join('')
-      result += '\n' + indent + structure(child, last, [...depth, !last])
+      result += '\n' + indent + stringifyDirStructure(child, last, [...depth, !last])
     })
   }
   return result
@@ -170,7 +170,7 @@ function structure(tree, last = true, depth = [0]) {
 Create folders and empty files according to the structure
 */
 
-function createStructure(tree, path = '.') {
+function makeDirStructure(tree, path = '.') {
   const { name, children } = tree
   const dir = path + '/' + name
   if (children) {
@@ -179,7 +179,7 @@ function createStructure(tree, path = '.') {
     } catch { }
     children.forEach(child => {
       try {
-        createStructure(child, dir)
+        makeDirStructure(child, dir)
       } catch { }
     })
   }
@@ -199,28 +199,28 @@ function createStructure(tree, path = '.') {
         children: [
           {
             name: 'subfolder2',
+            children: [],
+          },
+          {
+            name: 'subfolder3',
             children: [
-              {
-                name: 'subfolder3',
-                children: [
-                  { name: 'file1' },
-                ],
-              },
+              { name: 'file1' },
+              { name: 'file2' },
             ],
           },
         ],
       },
-      { name: 'file2' },
+      { name: 'file3' },
     ],
   }
-  createStructure(tree6)
+  makeDirStructure(tree6)
 }
 
 /*
 Create a structure from a directory
 */
 
-function getStructure(path = '.', ignore = []) {
+function readDirStructure(path = '.', ignore = []) {
   path = resolve(path)
   const name = path.split(sep).pop()
   const isFolder = fs.lstatSync(path).isDirectory()
@@ -228,19 +228,19 @@ function getStructure(path = '.', ignore = []) {
   if (isFolder) {
     tree.children = fs.readdirSync(path)
       .filter(child => !ignore.includes(child))
-      .map(child => getStructure(path + sep + child))
+      .map(child => readDirStructure(path + sep + child))
       .sort((a, b) => a.children && !b.children ? -1 : !a.children && b.children ? 1 : 0)
   }
   return tree
 }
 
 {
-  const struct = structure(getStructure())
+  const struct = stringifyDirStructure(readDirStructure())
   console.log(struct, '\n')
 }
 
 {
   const ignore = ['node_modules', '.git']
-  const struct = structure(getStructure('.', ignore))
+  const struct = stringifyDirStructure(readDirStructure('.', ignore))
   console.log(struct, '\n')
 }
