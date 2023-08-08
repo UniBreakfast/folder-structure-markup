@@ -87,7 +87,7 @@ makeDirStructure(tree, path)
 ```
 That will create a corresponding folder structure at the specified path, note that the `folder` directory will be created inside the existing `folder` directory, so you probably do not want to use the same name for the tree root node and the path or you will end up with a double nested folder.
 
-Also, do not worry about existing files or folders, they will not be overwritten and no error will be thrown.
+Also, do not worry about existing files or folders, they will not be overwritten and no error will be thrown. The function will continue to create the folder structure and files as specified in the tree object simply skipping any existing files or folders as they are already there.
 
 ### `stringifyDirStructure(tree)`
 
