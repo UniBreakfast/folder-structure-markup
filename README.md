@@ -44,7 +44,7 @@ where each node has a `name` property. If the node is representing a folder, it 
 
 Copy the functions you need from `structure.js` into your project. Then you can use them separately or in combination. For example, you can read a folder structure from a path and then present it in a human readable format or you can create a folder structure at a path based on a tree object describing the structure.
 
-`readDirStructure()` and `makeDirStructure()` do require Node.js builtin modules `fs` and `path`, so make sure to import those in your project. `stringifyDirStructure()` does not require any additional modules.
+`readDirStructure()` and `makeDirStructure()` do require Node.js builtin modules `fs` and `path`, so make sure to import those in your project. `stringifyDirStructure()` does not require any additional modules so it can run in a browser too.
 
 ## Usage Examples
 
