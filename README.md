@@ -85,7 +85,7 @@ const path = './folder' // optional, default is '.'
 // or 'C:\\folder' etc.
 makeDirStructure(tree, path)
 ```
-That will create a corresponding folder structure at the specified path, note that the `folder` directory will be created inside the existing `folder` directory. 
+That will create a corresponding folder structure at the specified path, note that the `folder` directory will be created inside the existing `folder` directory, so you probably do not want to use the same name for the tree root node and the path or you will end up with a double nested folder.
 
 Also, do not worry about existing files or folders, they will not be overwritten and no error will be thrown.
 
