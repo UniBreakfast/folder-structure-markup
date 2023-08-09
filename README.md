@@ -26,15 +26,15 @@ This repo includes three functions to work with and present the folder structure
 To describe a folder structure, a tree object is used. The tree object is a nested object like this:
 
 ```js
-const tree6 = { name: 'folder', children: [
+tree = { name: 'folder', children: [
   { name: 'subfolder1', children: [
     { name: 'subfolder2', children: [] },
     { name: 'subfolder3', children: [
-      { name: 'file1' },
-      { name: 'file2' },
+      { name: 'file1.ext' },
+      { name: 'file2.ext' },
     ] },
   ] },
-  { name: 'file3' },
+  { name: 'file3.ext' },
 ] }
 ```
 
@@ -64,7 +64,7 @@ const tree = readDirStructure(path, ignoreNames)
 console.log(tree)
 ``` 
 
-That will output a structure like in the [↑ example](#tree-object-format) above.
+That will output a structure like in the [example](#tree-object-format) above.
 
 ### `makeDirStructure(tree, ?path)`
 
