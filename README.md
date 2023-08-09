@@ -2,15 +2,15 @@
 
 ![image](https://github.com/UniBreakfast/folder-structure-markup/assets/19654456/9d6b0fd0-188d-4485-9484-1c726a288261)
 
-### - [Introduction](#introduction)
-- [Tree Object Format](#tree-object-format) 
-### - [Setup](#setup)<br> - [Usage Examples](#usage-examples)<br>
-- [`readDirStructure()`](#readdirstructurepath-ignorenames)
-- [`makeDirStructure()`](#makedirstructuretree-path)
-- [`stringifyDirStructure()`](#stringifydirstructuretree)<br>
+### - [Introduction](#-introduction)
+- [Tree Object Format](#-tree-object-format) 
+### - [Setup](#-setup)<br> - [Usage Examples](#-usage-examples)<br>
+- [`readDirStructure()`](#-readdirstructurepath-ignorenames)
+- [`makeDirStructure()`](#-makedirstructuretree-path)
+- [`stringifyDirStructure()`](#-stringifydirstructuretree)<br>
 
 
-## Introduction
+## [🔝](#--introduction) Introduction
 
 This repo includes three functions to work with and present the folder structure of a project. The functions are:
 
@@ -48,7 +48,7 @@ Copy the functions you need from `structure.js` into your project. Then you can 
 
 `readDirStructure()` and `makeDirStructure()` do require Node.js builtin modules `fs` and `path`, so make sure to import those in your project. `stringifyDirStructure()` does not require any additional modules so it can run in a browser too.
 
-## Usage Examples
+## [🔝](#--introduction) Usage Examples
 
 ### [🔝](#--introduction) `readDirStructure(?path, ?ignoreNames)`
 
