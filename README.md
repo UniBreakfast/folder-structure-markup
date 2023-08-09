@@ -1,14 +1,6 @@
 # Folder Structure Markup
 
-```
-  └─📁folder
-     ├─📁subfolder1
-     │  ├─📁subfolder2
-     │  └─📁subfolder3
-     │     ├─📄file1.ext
-     │     └─📄file2.ext
-     └─📄file3.ext
-```
+![image](https://github.com/UniBreakfast/folder-structure-markup/assets/19654456/9d6b0fd0-188d-4485-9484-1c726a288261)
 
 This repo includes three functions to work with and present the folder structure of a project. The functions are:
 
