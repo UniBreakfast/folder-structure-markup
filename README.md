@@ -1,14 +1,21 @@
 # Folder Structure Markup
 
 ![image](https://github.com/UniBreakfast/folder-structure-markup/assets/19654456/9d6b0fd0-188d-4485-9484-1c726a288261)
-
-### - [Introduction](#-introduction)
-- [Tree Object Format](#-tree-object-format) 
-### - [Setup](#-setup)<br> - [Usage Examples](#-usage-examples)<br>
-- [`readDirStructure()`](#-readdirstructurepath-ignorenames)
-- [`makeDirStructure()`](#-makedirstructuretree-path)
-- [`stringifyDirStructure()`](#-stringifydirstructuretree)<br>
-
+<hr>
+  
+1. [<h3>Introduction</h3>](#-introduction)
+    - [Tree Object Format](#-tree-object-format) 
+2. [<h3>Setup</h3>](#-setup)
+3. [<h3>Usage Examples</h3>](#-usage-examples)
+    - [`readDirStructure()`](#-readdirstructurepath-ignorenames)
+    - [`makeDirStructure()`](#-makedirstructuretree-path)
+    - [`stringifyDirStructure()`](#-stringifydirstructuretree)
+4. [<h3>Implementation Details</h3>](#-implementation-details)
+    - [`readDirStructure() {...}`](#-readdirstructurepath-ignorenames-1)
+    - [`makeDirStructure() {...}`](#-makedirstructuretree-path-1)
+    - [`stringifyDirStructure() {...}`](#-stringifydirstructuretree-1)
+  
+<hr>
 
 ## [🔝](#--introduction) Introduction
 
