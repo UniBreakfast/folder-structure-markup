@@ -1,0 +1,275 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="653"
+  height="740" shape-rendering="optimizeSpeed">
+
+  <g>
+    <rect x="50" y="80" width="307.4" height="30" style="fill:#c8e6c9; stroke:#555; stroke-width:1"></rect>
+
+    <line x1="60" y1="80" x2="60" y2="110" style="fill:#c8e6c9; stroke:#555; stroke-width:1"></line>
+    <line x1="347.4" y1="80" x2="347.4" y2="110" style="fill:#c8e6c9; stroke:#555; stroke-width:1"></line>
+
+    <title>function readEnt(path, skipNames)</title>
+    <text x="75" y="100" font-family="monospace" font-size="13" fill="#333">
+      <tspan x="75" y="100">function readEnt(path, skipNames)</tspan>
+    </text>
+
+  </g>
+  <g>
+    <rect x="87" y="128.5" width="248.4" height="30" rx="3" ry="3"
+      style="fill:#bbdefb; stroke:#555; stroke-width:1"></rect>
+    <title>const name = [object Object]</title>
+    <text x="102" y="148.5" font-family="monospace" font-size="13" fill="#333">
+      <tspan x="102" y="148.5">const name = [object Object]</tspan>
+    </text>
+
+
+  </g>
+  <g>
+    <rect x="87" y="177" width="264" height="30" rx="3" ry="3"
+      style="fill:#bbdefb; stroke:#555; stroke-width:1"></rect>
+    <title>const folder = [object Object]</title>
+    <text x="102" y="197" font-family="monospace" font-size="13" fill="#333">
+      <tspan x="102" y="197">const folder = [object Object]</tspan>
+    </text>
+
+
+  </g>
+  <g>
+    <rect x="87" y="225.5" width="178.2" height="30" rx="3" ry="3"
+      style="fill:#bbdefb; stroke:#555; stroke-width:1"></rect>
+    <title>const childPaths = </title>
+    <text x="102" y="245.5" font-family="monospace" font-size="13" fill="#333">
+      <tspan x="102" y="245.5">const childPaths = </tspan>
+    </text>
+
+
+  </g>
+  <g>
+    <rect x="154" y="289" width="130.2" height="30" rx="3" ry="3"
+      style="fill:#e1bee7; stroke:#555; stroke-width:1"></rect>
+    <polygon points="124,304 154,274 184,304 154,334"
+      style="fill:#e1bee7; stroke:#555; stroke-width:1"></polygon>
+    <title>(!folder)</title>
+    <text x="199" y="309" font-family="monospace" font-size="13" fill="#333">
+      <tspan x="199" y="309">(!folder)</tspan>
+    </text>
+
+    <text x="150.1" y="309" font-family="monospace" font-size="13" fill="#333">?</text>
+    <text x="161.8" y="335.95" font-family="monospace" font-size="13" fill="#333">+</text>
+    <text x="288.09999999999997" y="302.05" font-family="monospace" font-size="13" fill="#333">-</text>
+  </g>
+  <g>
+    <rect x="344.2" y="344" width="128" height="30"
+      style="fill:#c8e6c9; stroke:#555; stroke-width:1"></rect>
+
+    <line x1="354.2" y1="344" x2="354.2" y2="374" style="fill:#c8e6c9; stroke:#555; stroke-width:1"></line>
+    <line x1="462.2" y1="344" x2="462.2" y2="374" style="fill:#c8e6c9; stroke:#555; stroke-width:1"></line>
+
+    <title>(child) =&gt;</title>
+    <text x="369.2" y="364" font-family="monospace" font-size="13" fill="#333">
+      <tspan x="369.2" y="364">(child) =&gt;</tspan>
+    </text>
+
+  </g>
+  <g>
+    <rect x="344.2" y="392.5" width="128" height="30"
+      style="fill:#c8e6c9; stroke:#555; stroke-width:1"></rect>
+
+    <line x1="354.2" y1="392.5" x2="354.2" y2="422.5"
+      style="fill:#c8e6c9; stroke:#555; stroke-width:1"></line>
+    <line x1="462.2" y1="392.5" x2="462.2" y2="422.5"
+      style="fill:#c8e6c9; stroke:#555; stroke-width:1"></line>
+
+    <title>(child) =&gt;</title>
+    <text x="369.2" y="412.5" font-family="monospace" font-size="13" fill="#333">
+      <tspan x="369.2" y="412.5">(child) =&gt;</tspan>
+    </text>
+
+  </g>
+  <g>
+    <rect x="344.2" y="392.5" width="128" height="30"
+      style="fill:#c8e6c9; stroke:#555; stroke-width:1"></rect>
+
+    <line x1="354.2" y1="392.5" x2="354.2" y2="422.5"
+      style="fill:#c8e6c9; stroke:#555; stroke-width:1"></line>
+    <line x1="462.2" y1="392.5" x2="462.2" y2="422.5"
+      style="fill:#c8e6c9; stroke:#555; stroke-width:1"></line>
+
+    <title>(child) =&gt;</title>
+    <text x="369.2" y="412.5" font-family="monospace" font-size="13" fill="#333">
+      <tspan x="369.2" y="412.5">(child) =&gt;</tspan>
+    </text>
+
+  </g>
+  <g>
+    <rect x="381.2" y="441" width="225" height="30" rx="3" ry="3"
+      style="fill:#bbdefb; stroke:#555; stroke-width:1"></rect>
+
+    <line x1="606.2" y1="451" x2="611.2" y2="451" style="fill:#c8e6c9; stroke:#555; stroke-width:1"></line>
+
+    <line x1="606.2" y1="461" x2="611.2" y2="461" style="fill:#c8e6c9; stroke:#555; stroke-width:1"></line>
+
+    <path d="M611.2, 445 L627.2, 456 L611.2, 467 Z" fill="#c8e6c9" stroke="#555" stroke-width="1"></path>
+
+    <title>return path + sep + child</title>
+    <text x="396.2" y="461" font-family="monospace" font-size="13" fill="#333">
+      <tspan x="396.2" y="461">return path + sep + child</tspan>
+    </text>
+
+  </g>
+  <g>
+    <rect x="87" y="491" width="76.8" height="30" rx="3" ry="3"
+      style="fill:#bbdefb; stroke:#555; stroke-width:1"></rect>
+
+    <line x1="163.8" y1="501" x2="168.8" y2="501" style="fill:#c8e6c9; stroke:#555; stroke-width:1"></line>
+
+    <line x1="163.8" y1="511" x2="168.8" y2="511" style="fill:#c8e6c9; stroke:#555; stroke-width:1"></line>
+
+    <path d="M168.8, 495 L184.8, 506 L168.8, 517 Z" fill="#c8e6c9" stroke="#555" stroke-width="1"></path>
+
+    <title>return</title>
+    <text x="102" y="511" font-family="monospace" font-size="13" fill="#333">
+      <tspan x="102" y="511">return</tspan>
+    </text>
+
+  </g>
+  <g>
+    <rect x="124" y="539.5" width="53.4" height="30" rx="3" ry="3"
+      style="fill:#bbdefb; stroke:#555; stroke-width:1"></rect>
+    <title>{*}</title>
+    <text x="139" y="559.5" font-family="monospace" font-size="13" fill="#333">
+      <tspan x="139" y="559.5">{*}</tspan>
+    </text>
+
+
+  </g>
+  <g>
+    <rect x="161" y="588" width="61.2" height="30" rx="2" ry="2"
+      style="fill:#bbdefb; stroke:#555; stroke-width:1"></rect>
+    <title>name</title>
+    <text x="176" y="608" font-family="monospace" font-size="13" fill="#333">
+      <tspan x="176" y="608">name</tspan>
+    </text>
+
+
+  </g>
+  <g>
+    <rect x="161" y="636.5" width="76.8" height="30" rx="2" ry="2"
+      style="fill:#bbdefb; stroke:#555; stroke-width:1"></rect>
+    <title>folder</title>
+    <text x="176" y="656.5" font-family="monospace" font-size="13" fill="#333">
+      <tspan x="176" y="656.5">folder</tspan>
+    </text>
+
+
+  </g>
+  <g>
+    <rect x="161" y="685" width="108" height="30" rx="2" ry="2"
+      style="fill:#bbdefb; stroke:#555; stroke-width:1"></rect>
+    <title>childPaths</title>
+    <text x="176" y="705" font-family="monospace" font-size="13" fill="#333">
+      <tspan x="176" y="705">childPaths</tspan>
+    </text>
+
+
+  </g>
+  <g>
+    <rect x="25" y="13.75" width="216.6" height="24"
+      style="fill:#fff9c4; stroke:#555; stroke-width:1"></rect>
+    <circle cx="25" cy="25" r="15" style="fill:#fff9c4; stroke:#555; stroke-width:1"></circle>
+    <title>Program: source module</title>
+    <text x="55" y="30" font-family="monospace" font-size="13" fill="#333">
+      <tspan x="55" y="30">Program: source module</tspan>
+    </text>
+  </g>
+  <g>
+    <path d="M25, 40 L25 91 Q25 95
+      29 95
+      L42 95 "
+      style="fill:none; stroke:#555; stroke-width:1"></path>
+    <path d="M42, 92 L50, 95 L42, 98 Z" fill="#444"></path>
+  </g>
+  <g>
+    <path d="M68.5, 110 L68.5 139.5 Q68.5 143.5
+      72.5 143.5
+      L79 143.5 "
+      style="fill:none; stroke:#555; stroke-width:1"></path>
+    <path d="M79, 140.5 L87, 143.5 L79, 146.5 Z" fill="#444"></path>
+  </g>
+  <g>
+    <path d="M68.5, 110 L68.5 188 Q68.5 192
+      72.5 192
+      L79 192 "
+      style="fill:none; stroke:#555; stroke-width:1"></path>
+    <path d="M79, 189 L87, 192 L79, 195 Z" fill="#444"></path>
+  </g>
+  <g>
+    <path d="M68.5, 110 L68.5 236.5 Q68.5 240.5
+      72.5 240.5
+      L79 240.5 "
+      style="fill:none; stroke:#555; stroke-width:1"></path>
+    <path d="M79, 237.5 L87, 240.5 L79, 243.5 Z" fill="#444"></path>
+  </g>
+  <g>
+    <path d="M105.5, 255.5 L105.5 300 Q105.5 304
+      109.5 304
+      L116 304 "
+      style="fill:none; stroke:#555; stroke-width:1"></path>
+    <path d="M116, 301 L124, 304 L116, 307 Z" fill="#444"></path>
+  </g>
+  <g>
+    <path
+      d="M284.2, 304 L320.2 304  Q324.2 304
+      324.2 308
+      L324.2 351 Q324.2 359
+      328.2 359
+      L336.2 359 "
+      style="fill:none; stroke:#555; stroke-width:1"></path>
+    <path d="M336.2, 356 L344.2, 359 L336.2, 362 Z" fill="#444"></path>
+  </g>
+  <g>
+    <path
+      d="M284.2, 304 L320.2 304  Q324.2 304
+      324.2 308
+      L324.2 399.5 Q324.2 407.5
+      328.2 407.5
+      L336.2 407.5 "
+      style="fill:none; stroke:#555; stroke-width:1"></path>
+    <path d="M336.2, 404.5 L344.2, 407.5 L336.2, 410.5 Z" fill="#444"></path>
+  </g>
+  <g>
+    <path d="M362.7, 422.5 L362.7 452 Q362.7 456
+      366.7 456
+      L373.2 456 "
+      style="fill:none; stroke:#555; stroke-width:1"></path>
+    <path d="M373.2, 453 L381.2, 456 L373.2, 459 Z" fill="#444"></path>
+  </g>
+  <g>
+    <path d="M68.5, 110 L68.5 502 Q68.5 506
+      72.5 506
+      L79 506 "
+      style="fill:none; stroke:#555; stroke-width:1"></path>
+    <path d="M79, 503 L87, 506 L79, 509 Z" fill="#444"></path>
+  </g>
+  <g>
+    <path d="M105.5, 521 L105.5 550.5 Q105.5 554.5
+      109.5 554.5
+      L116 554.5 "
+      style="fill:none; stroke:#555; stroke-width:1"></path>
+    <path d="M116, 551.5 L124, 554.5 L116, 557.5 Z" fill="#444"></path>
+  </g>
+  <g>
+    <path d="M142.5, 569.5 L142.5 599 Q142.5 603
+      146.5 603
+      L161 603 "
+      style="fill:none; stroke:#555; stroke-width:1"></path> false </g>
+  <g>
+    <path d="M142.5, 569.5 L142.5 647.5 Q142.5 651.5
+      146.5 651.5
+      L161 651.5 "
+      style="fill:none; stroke:#555; stroke-width:1"></path> false </g>
+  <g>
+    <path d="M142.5, 569.5 L142.5 696 Q142.5 700
+      146.5 700
+      L161 700 "
+      style="fill:none; stroke:#555; stroke-width:1"></path> false </g>
+</svg>
