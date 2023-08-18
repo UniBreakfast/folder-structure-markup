@@ -340,7 +340,7 @@ function readEnt(path, skipNames) {
 function readDirStructure(path = '.', skipNames = []) {
   const { dir, base } = parse(resolve(path))
 
-  return makeReader(skipNames)(dir, base, skipNames)
+  return makeReader(skipNames)(dir, base)
 }
 
 function makeReader(skipNames) {

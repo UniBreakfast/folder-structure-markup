@@ -1,13 +1,11 @@
 ﻿<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="643"
-  height="1598" shape-rendering="optimizeSpeed" style="background: #aaa;font-weight: bold;
-    ">
+  height="1598" shape-rendering="optimizeSpeed">
 
   <g>
-    <rect x="50" y="80" width="440" height="30"
-      style="fill:#a5d6a7; stroke:#444; stroke-width:1"></rect>
+    <rect x="50" y="80" width="460" height="30" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></rect>
 
     <line x1="60" y1="80" x2="60" y2="110" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
-    <line x1="480" y1="80" x2="480" y2="110" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+    <line x1="500" y1="80" x2="500" y2="110" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
 
     <title>function readDirStructure(path = '.', skipNames = [])</title>
     <text x="75" y="100" font-family="monospace" font-size="13" fill="#222">
@@ -46,29 +44,26 @@
 
   </g>
   <g>
-    <rect x="87" y="274" width="420" height="30" rx="3" ry="3"
+    <rect x="87" y="274" width="334.2" height="30" rx="3" ry="3"
       style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
 
-    <line x1="507" y1="284" x2="512" y2="284" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+    <line x1="421.2" y1="284" x2="426.2" y2="284" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
 
-    <line x1="507" y1="294" x2="512" y2="294" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+    <line x1="421.2" y1="294" x2="426.2" y2="294" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
 
-    <path d="M512, 278 L528, 289 L512, 300 Z" fill="#a5d6a7" stroke="#444" stroke-width="1"></path>
+    <path d="M426.2, 278 L442.2, 289 L426.2, 300 Z" fill="#a5d6a7" stroke="#444" stroke-width="1"></path>
 
-    <title>return makeReader(skipNames)(dir, base, skipNames)</title>
+    <title>return makeReader(skipNames)(dir, base)</title>
     <text x="102" y="294" font-family="monospace" font-size="13" fill="#222">
-      <tspan x="102" y="294">return makeReader(skipNames)(dir, base, skipNames)</tspan>
+      <tspan x="102" y="294">return makeReader(skipNames)(dir, base)</tspan>
     </text>
 
   </g>
   <g>
-    <rect x="50" y="337.5" width="284" height="30"
-      style="fill:#a5d6a7; stroke:#444; stroke-width:1"></rect>
+    <rect x="50" y="337.5" width="284" height="30" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></rect>
 
-    <line x1="60" y1="337.5" x2="60" y2="367.5"
-      style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
-    <line x1="324" y1="337.5" x2="324" y2="367.5"
-      style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+    <line x1="60" y1="337.5" x2="60" y2="367.5" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+    <line x1="324" y1="337.5" x2="324" y2="367.5" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
 
     <title>function makeReader(skipNames)</title>
     <text x="75" y="357.5" font-family="monospace" font-size="13" fill="#222">
@@ -224,8 +219,7 @@
 
     <line x1="269" y1="993" x2="274" y2="993" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
 
-    <line x1="269" y1="1003" x2="274" y2="1003"
-      style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+    <line x1="269" y1="1003" x2="274" y2="1003" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
 
     <path d="M274, 987 L290, 998 L274, 1009 Z" fill="#a5d6a7" stroke="#444" stroke-width="1"></path>
 
@@ -239,8 +233,7 @@
     <rect x="50" y="1046.5" width="276.2" height="30"
       style="fill:#a5d6a7; stroke:#444; stroke-width:1"></rect>
 
-    <line x1="60" y1="1046.5" x2="60" y2="1076.5"
-      style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+    <line x1="60" y1="1046.5" x2="60" y2="1076.5" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
     <line x1="316.2" y1="1046.5" x2="316.2" y2="1076.5"
       style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
 
@@ -260,8 +253,7 @@
     <line x1="163.8" y1="1115" x2="168.8" y2="1115"
       style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
 
-    <path d="M168.8, 1099 L184.8, 1110 L168.8, 1121 Z" fill="#a5d6a7" stroke="#444"
-      stroke-width="1"></path>
+    <path d="M168.8, 1099 L184.8, 1110 L168.8, 1121 Z" fill="#a5d6a7" stroke="#444" stroke-width="1"></path>
 
     <title>return</title>
     <text x="102" y="1115" font-family="monospace" font-size="13" fill="#222">
@@ -294,8 +286,7 @@
     <line x1="440.6" y1="1227" x2="445.6" y2="1227"
       style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
 
-    <path d="M445.6, 1211 L461.6, 1222 L445.6, 1233 Z" fill="#a5d6a7" stroke="#444"
-      stroke-width="1"></path>
+    <path d="M445.6, 1211 L461.6, 1222 L445.6, 1233 Z" fill="#a5d6a7" stroke="#444" stroke-width="1"></path>
 
     <title>return !skipNames.includes(name)</title>
     <text x="176" y="1227" font-family="monospace" font-size="13" fill="#222">
@@ -307,8 +298,7 @@
     <rect x="50" y="1270.5" width="245" height="30"
       style="fill:#a5d6a7; stroke:#444; stroke-width:1"></rect>
 
-    <line x1="60" y1="1270.5" x2="60" y2="1300.5"
-      style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+    <line x1="60" y1="1270.5" x2="60" y2="1300.5" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
     <line x1="285" y1="1270.5" x2="285" y2="1300.5"
       style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
 
@@ -328,8 +318,7 @@
     <line x1="163.8" y1="1339" x2="168.8" y2="1339"
       style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
 
-    <path d="M168.8, 1323 L184.8, 1334 L168.8, 1345 Z" fill="#a5d6a7" stroke="#444"
-      stroke-width="1"></path>
+    <path d="M168.8, 1323 L184.8, 1334 L168.8, 1345 Z" fill="#a5d6a7" stroke="#444" stroke-width="1"></path>
 
     <title>return</title>
     <text x="102" y="1339" font-family="monospace" font-size="13" fill="#222">
@@ -356,11 +345,9 @@
     <rect x="161" y="1431" width="225" height="30" rx="3" ry="3"
       style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
 
-    <line x1="386" y1="1441" x2="391" y2="1441"
-      style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+    <line x1="386" y1="1441" x2="391" y2="1441" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
 
-    <line x1="386" y1="1451" x2="391" y2="1451"
-      style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+    <line x1="386" y1="1451" x2="391" y2="1451" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
 
     <path d="M391, 1435 L407, 1446 L391, 1457 Z" fill="#a5d6a7" stroke="#444" stroke-width="1"></path>
 
@@ -374,8 +361,7 @@
     <rect x="50" y="1494.5" width="260.6" height="30"
       style="fill:#a5d6a7; stroke:#444; stroke-width:1"></rect>
 
-    <line x1="60" y1="1494.5" x2="60" y2="1524.5"
-      style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+    <line x1="60" y1="1494.5" x2="60" y2="1524.5" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
     <line x1="300.6" y1="1494.5" x2="300.6" y2="1524.5"
       style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
 
@@ -395,8 +381,7 @@
     <line x1="366.6" y1="1563" x2="371.6" y2="1563"
       style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
 
-    <path d="M371.6, 1547 L387.6, 1558 L371.6, 1569 Z" fill="#a5d6a7" stroke="#444"
-      stroke-width="1"></path>
+    <path d="M371.6, 1547 L387.6, 1558 L371.6, 1569 Z" fill="#a5d6a7" stroke="#444" stroke-width="1"></path>
 
     <title>return !a.children - !b.children</title>
     <text x="102" y="1563" font-family="monospace" font-size="13" fill="#222">
@@ -548,16 +533,14 @@
     <path d="M190, 946.5 L198, 949.5 L190, 952.5 Z" fill="#333"></path>
   </g>
   <g>
-    <path
-      d="M142.5, 528 L142.5 994 Q142.5 998
+    <path d="M142.5, 528 L142.5 994 Q142.5 998
                 146.5 998
                 L153 998 "
       style="fill:none; stroke:#444; stroke-width:1"></path>
     <path d="M153, 995 L161, 998 L153, 1001 Z" fill="#333"></path>
   </g>
   <g>
-    <path
-      d="M25, 40 L25 1057.5 Q25 1061.5
+    <path d="M25, 40 L25 1057.5 Q25 1061.5
                 29 1061.5
                 L42 1061.5 "
       style="fill:none; stroke:#444; stroke-width:1"></path>
@@ -588,8 +571,7 @@
     <path d="M153, 1219 L161, 1222 L153, 1225 Z" fill="#333"></path>
   </g>
   <g>
-    <path
-      d="M25, 40 L25 1281.5 Q25 1285.5
+    <path d="M25, 40 L25 1281.5 Q25 1285.5
                 29 1285.5
                 L42 1285.5 "
       style="fill:none; stroke:#444; stroke-width:1"></path>
@@ -620,8 +602,7 @@
     <path d="M153, 1443 L161, 1446 L153, 1449 Z" fill="#333"></path>
   </g>
   <g>
-    <path
-      d="M25, 40 L25 1505.5 Q25 1509.5
+    <path d="M25, 40 L25 1505.5 Q25 1509.5
                 29 1509.5
                 L42 1509.5 "
       style="fill:none; stroke:#444; stroke-width:1"></path>

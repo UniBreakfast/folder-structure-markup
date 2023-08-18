@@ -140,7 +140,7 @@ const { resolve, parse, join } = require('path')
 function readDirStructure(path = '.', skipNames = []) {
   const { dir, base } = parse(resolve(path))
 
-  return makeReader(skipNames)(dir, base, skipNames)
+  return makeReader(skipNames)(dir, base)
 }
 
 function makeReader(skipNames) {
@@ -180,4 +180,5 @@ function foldersFirst(a, b) {
 ```
 
 ![readDirStructure flowchart](read-dir-structure.png)
+
 [readDirStructure flowchart](read-dir-structure.png)
