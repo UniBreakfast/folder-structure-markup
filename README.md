@@ -179,4 +179,5 @@ function foldersFirst(a, b) {
 }
 ```
 
+![readDirStructure flowchart](read-dir-structure.png)
 [readDirStructure flowchart](read-dir-structure.png)
