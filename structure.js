@@ -221,120 +221,21 @@ function makeDirStructure(tree, path = '.') {
 Create a structure from a directory
 */
 
-function readDirStructure(path = '.', ignore = []) {
-  path = resolve(path)
-  const name = path.split(sep).pop()
-  const isFolder = fs.lstatSync(path).isDirectory()
-  const tree = { name }
-  if (isFolder) {
-    tree.children = fs.readdirSync(path)
-      .filter(child => !ignore.includes(child))
-      .map(child => readDirStructure(path + sep + child))
-      .sort((a, b) => !a.children - !b.children)
-  }
-  return tree
-}
-
-function readDirStructure(path = '.', ignore = []) {
-  path = resolve(path)
-
-  const name = path.split(sep).pop()
-  const isFolder = fs.lstatSync(path).isDirectory()
-  const tree = { name }
-
-  if (isFolder) {
-    tree.children = fs.readdirSync(path)
-      .filter(isWorthReading)
-      .map(readDeeper)
-      .sort(childfreeLast)
-      .x
-  }
-
-  return tree
-
-  function isWorthReading(child) {
-    return !ignore.includes(child)
-  }
-
-  function readDeeper(child) {
-    return readDirStructure(path + sep + child)
-  }
-
-  function childfreeLast(a, b) {
-    return !a.children - !b.children
-  }
-}
-
-function readDirStructure(path = '.', skipNames = []) {
-  const { name, folder, childPaths } = readEnt(path, skipNames)
-  const tree = { name }
-
-  if (folder) {
-    tree.children = childPaths
-      .map(path => readDirStructure(path, skipNames))
-      .sort(foldersFirst).x
-  }
-
-  return tree
-}
-
-function readEnt(path, skipNames) {
-  const realPath = resolve(path)
-  const pathChunks = realPath.split(sep)
-  const name = pathChunks.pop()
-  const stats = fs.lstatSync(path)
-  const folder = stats.isDirectory()
-
-  let childPaths = null
-
-  if (folder) {
-    childPaths = []
-
-    const allNames = fs.readdirSync(path)
-
-    for (const name of allNames) {
-      if (!skipNames.includes(name)) {
-        childPaths.push(path + sep + name)
-      }
+{
+  // first version
+  function readDirStructure(path = '.', ignore = []) {
+    path = resolve(path)
+    const name = path.split(sep).pop()
+    const isFolder = fs.lstatSync(path).isDirectory()
+    const tree = { name }
+    if (isFolder) {
+      tree.children = fs.readdirSync(path)
+        .filter(child => !ignore.includes(child))
+        .map(child => readDirStructure(path + sep + child))
+        .sort((a, b) => !a.children - !b.children)
     }
+    return tree
   }
-
-  return { name, folder, childPaths }
-}
-
-
-function readEnt(path, skipNames) {
-  const name = resolve(path).split(sep).pop()
-  const folder = fs.lstatSync(path).isDirectory()
-  const childPaths = !folder ? null : fs.readdirSync(path)
-    .filter(child => !skipNames.includes(child)).x
-    .map(child => path + sep + child)
-
-  return { name, folder, childPaths }
-}
-
-function readEnt(path, skipNames) {
-  const realPath = resolve(path)
-  const pathChunks = realPath.split(sep)
-  const name = pathChunks.pop()
-  const stats = fs.lstatSync(path)
-  const folder = stats.isDirectory()
-
-  let childPaths = null
-
-  if (folder) {
-    childPaths = []
-
-    const allNames = fs.readdirSync(path)
-
-    for (const name of allNames) {
-      if (!skipNames.includes(name)) {
-        childPaths.push(path + sep + name)
-      }
-    }
-  }
-
-  return { name, folder, childPaths }
 }
 
 function readDirStructure(path = '.', skipNames = []) {
